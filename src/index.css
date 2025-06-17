@@ -1,0 +1,68 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 20 33 25;
+    --foreground: 243 247 244;
+
+    --card: 20 33 25;
+    --card-foreground: 243 247 244;
+
+    --popover: 20 33 25;
+    --popover-foreground: 243 247 244;
+
+    --primary: 72 122 84;
+    --primary-foreground: 243 247 244;
+
+    --secondary: 45 74 54;
+    --secondary-foreground: 243 247 244;
+
+    --muted: 45 74 54;
+    --muted-foreground: 180 200 186;
+
+    --accent: 72 122 84;
+    --accent-foreground: 243 247 244;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 45 74 54;
+    --input: 45 74 54;
+    --ring: 72 122 84;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 20 33 25;
+    --sidebar-foreground: 243 247 244;
+    --sidebar-primary: 72 122 84;
+    --sidebar-primary-foreground: 243 247 244;
+    --sidebar-accent: 45 74 54;
+    --sidebar-accent-foreground: 243 247 244;
+    --sidebar-border: 45 74 54;
+    --sidebar-ring: 72 122 84;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-nature-sage text-nature-charcoal font-inter;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair;
+  }
+}
+
+.nature-grain-bg {
+  background-image: 
+    radial-gradient(circle at 20% 80%, rgba(72, 122, 84, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(45, 74, 54, 0.1) 0%, transparent 50%);
+}
